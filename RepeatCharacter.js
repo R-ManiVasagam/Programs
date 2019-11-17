@@ -1,0 +1,7 @@
+let GivenString="a10b20c2";
+let CharacterList=GivenString.split(/[0-99]/).filter(function(val){return val!=""})
+let NumberList=GivenString.split(/[a-z]/).filter(function(val){return val!=""})
+for(let i=0;i<CharacterList.length;i++){
+    for(let j=0;j< parseInt(NumberList[i]);j++)
+    console.log(CharacterList[i])
+}
